@@ -1,0 +1,48 @@
+<head>
+    <title>FORMS</title>
+</head>
+<body>
+    <center><h1>Login</h1>
+    <form action="/submit" method="post">
+        <label for="name">Username:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <h2>GENDER</h2>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value ="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <h2>SELECT YOUR CAR</h2>
+        <select name="cars" id="cars">
+            <option>Select</option>
+            <option value="G WagonR">G WagonR</option>
+            <option value="Lord Alto">Lord Alto</option>
+            <option value="Nano">Nano</option>
+            <option value="SCorpio">Scorpio</option>
+        </select>
+        <br>
+
+        <h3>Description</h3>
+        <textarea name="Message" rows="10" cols="30"></textarea><br><br>
+
+        <h4>Do you have any other </h4>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+
+        <input type="button" onclick="alert('You will be redirected to YouTube'); window.location.href='https://www.youtube.com';" value="Click Me"><br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+    </center>
+</body>
+</html> 
