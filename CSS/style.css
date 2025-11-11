@@ -1,0 +1,19 @@
+p{     
+    color:rgb(220, 254, 220);
+    background-color:rgb(53, 76, 54);
+
+}
+
+#a1{
+    color:black;
+    background-color: rgb(15, 181, 126);
+    width: 100px;
+    height: 100px;
+}
+
+.a2{
+    color: crimson;
+    background-color: rgb(179, 228, 105);
+    width: 200px;
+    height: 200px;
+}
