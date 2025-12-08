@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NavBar</title>
+
+        <style>
+            body{
+                margin: 0; 
+                padding: 0; 
+                box-sizing: border-box;
+                background-color: antiquewhite;
+            }
+
+            .navbar{
+                display: flex; 
+                justify-content: space-between; 
+                align-items: center; 
+                background: linear-gradient(to right, #fded17, #ffae3d, rgb(255, 36, 36)); 
+                color: rgb(0, 0, 0); 
+                padding: 15px 20px;
+            }
+
+            .name{
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .burger{
+                display: none; 
+                font-size: 20px; 
+                cursor: pointer; 
+            }
+
+            #menu{
+                display: none;
+            } 
+
+            .link{
+                list-style: none;
+                display: flex;
+                font-size: 18px;
+
+            }
+
+            .link li{
+                margin: 0 15px;
+            }
+
+            .link li a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+
+
+            .cart a{
+                text-decoration: none;  
+                font-size: 30px; 
+            }
+
+            @media (max-width: 768px) {
+                .link { 
+                    display: none; 
+                    position: absolute; 
+                    top: 60px; 
+                    left: 0; 
+                    right: 0; 
+                    flex-direction: column; 
+                    background-color: #f95454; 
+                    padding: 15px 0; 
+                } 
+                
+                .link li { 
+                    margin: 10px 0; 
+                    text-align: center; 
+                } 
+                
+                .burger { 
+                    display: block; 
+                }
+            }
+
+            #menu:checked + .burger + .link{ 
+                display: flex; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="name">Amazon</div>
+            <input type="checkbox" id="menu"> 
+            <label for="menu" class="burger">&#9776;</label> 
+            <ul class="link">
+                <li><a href="">Home</a></li> 
+                <li><a href="">Products</a></li> 
+                <li><a href="">Categories</a></li> 
+                <li><a href="">Deals</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+            <div class="cart">
+                <a href="">🛒</a> 
+            </div>
+        </nav>
+
+        <center><h1>Welcome</h1></center>
+        
+    </body>
