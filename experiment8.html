@@ -1,83 +1,88 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>ID Card</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+<head>
+    <title>3 ID Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            body{
-                font-family: Arial, sans-serif;
-                background-color: #f3e5f5;
-                padding: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                color: #000000;
-                font-weight: bolder;
-            }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            font-weight: bolder;
+        }
 
-            .pro-card{
-                width: 300px;
-                background: #e0f8a6;
-                padding: 20px;
-                border-radius: 20px;
-                text-align: center;
-            }
+        .card-container{
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+        }
 
-            .header{
-                margin-bottom: 20px;
-            }
+        .pro-card{
+            width: 300px;
+            background: #e0f8a6;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
 
-            .header h1{
-                font-size: 28px;
-            }
+        .header{
+            margin-bottom: 20px;
+        }
 
-            .pro-img{
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                overflow: hidden;
-                margin: 0 auto 20px auto;
-            }
+        .header h1{
+            font-size: 22px;
+        }
 
-            .pro-img img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+        .pro-img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px auto;
+        }
 
-            .pro-name{
-                font-size: 20px;
-                font-weight: bold;
-                margin-bottom: 15px;
-            }
+        .pro-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-            .pro-info p{
-                background: #ffcdd7;
-                padding: 8px;
-                margin-bottom: 5px;
-                border-radius: 6px;
-                font-size: 14px;
-            }
-        </style>
-    </head>
+        .pro-name{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
 
-    <body>
+        .pro-info p{
+            background: #ffcdd7;
+            padding: 8px;
+            margin-bottom: 5px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        
         <div class="pro-card">
-            <div class="header">
-                <h1>MY ID CARD</h1>
-            </div>
-
+            <div class="header"><h1>MY ID CARD</h1></div>
             <div class="pro-img">
-                <img src="https://i.pinimg.com/736x/8e/b0/08/8eb008258e555bc9466032e1acec32d9.jpg" alt="Profile Photo">
+                <img src="https://i.pinimg.com/736x/8e/b0/08/8eb008258e555bc9466032e1acec32d9.jpg">
             </div>
-
             <div class="pro-name">Devansh Kumar</div>
-
             <div class="pro-info">
                 <p>B.Tech - CSE-DS</p>
                 <p>Section : 1</p>
@@ -89,5 +94,44 @@
                 <p>-----------</p>
             </div>
         </div>
-    </body>
+
+        <div class="pro-card">
+            <div class="header"><h1>MY ID CARD</h1></div>
+            <div class="pro-img">
+                <img src="https://i.ibb.co/tMg27M11/images.jpg">
+            </div>
+            <div class="pro-name">Anant Thakkur</div>
+            <div class="pro-info">
+                <p>B.Tech - CSE</p>
+                <p>Section : 2</p>
+                <p>Admission No. : 2025B15410022</p>
+                <p>1st Year</p>
+                <p>Male</p>
+                <p>DOB : 15/05/2007</p>
+                <p>XXXXXXXXXX</p>
+                <p>-----------</p>
+            </div>
+        </div>
+
+        <div class="pro-card">
+            <div class="header"><h1>MY ID CARD</h1></div>
+            <div class="pro-img">
+                <img src="https://i.ibb.co/CsXmr4gd/962b80a90b700694ad089822a1d6cf77.jpg">
+            </div>
+            <div class="pro-name">Aryan</div>
+            <div class="pro-info">
+                <p>B.Tech - AI/ML</p>
+                <p>Section : 3</p>
+                <p>Admission No. : 2025B15410059</p>
+                <p>1st Year</p>
+                <p>Male</p>
+                <p>DOB : 11/11/2007</p>
+                <p>XXXXXXXXXX</p>
+                <p>-----------</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
 </html>
